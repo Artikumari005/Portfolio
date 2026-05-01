@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-
+import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Link, Navigate, useParams } from "react-router-dom";
 
