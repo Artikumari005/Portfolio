@@ -39,7 +39,7 @@ const ProjectCard = ({ project, index }) => {
         transform: "translateZ(0)"
       }}
     >
-      <Link
+<Link
         to={`/projects/${project.id}`}
         className="group block rounded-[36px] border-[14px] border-[#f8f8f8]/60 bg-[#fbf5ff] p-4 shadow-[0_10px_30px_rgba(0,0,0,0.08)] gpu-accelerated"
         aria-label={`View ${project.title}`}
@@ -62,7 +62,7 @@ const ProjectCard = ({ project, index }) => {
         </div>
       </Link>
 
-      <div className="pt-4">
+<div className="pt-4">
         <p className="text-[16px] font-medium leading-none text-[#666666]">
           {project.category}
         </p>

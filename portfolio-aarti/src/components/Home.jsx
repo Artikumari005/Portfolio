@@ -30,20 +30,20 @@ const Home = () => {
     >
 
       {/* Scene sits in normal flow, clipped by overflow-hidden on the section */}
-      <div className="absolute inset-0 z-10 pointer-events-none">
+      <div className="absolute inset-0 z-10 pointer-events-none block max-[767px]:hidden md:scale-[0.78] lg:scale-100 origin-center">
         <Scene />
       </div>
 
       {/* ================= BACKGROUND MARQUEE ================= */}
-      <div className="font-[Poppins] absolute inset-0 z-0 flex items-center overflow-hidden">
+      <div className="font-[Poppins] absolute inset-0 z-0 flex items-center overflow-hidden max-[767px]:hidden">
         <div className="marquee flex items-center gap-24">
-          <span className="text-[260px] md:text-[320px] lg:text-[380px] font-extrabold text-black/10">
+          <span className="text-[220px] lg:text-[380px] font-extrabold text-black/10">
             FULL STACK DEVELOPER
           </span>
-          <span className="text-[260px] md:text-[320px] lg:text-[380px] font-extrabold text-black/10">
+          <span className="text-[220px] lg:text-[380px] font-extrabold text-black/10">
             FULL STACK DEVELOPER
           </span>
-          <span className="text-[260px] md:text-[320px] lg:text-[380px] font-extrabold text-black/10">
+          <span className="text-[220px] lg:text-[380px] font-extrabold text-black/10">
             FULL STACK DEVELOPER
           </span>
         </div>

@@ -61,7 +61,7 @@ const StackCard = ({ tool, index }) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.15 }}
-      className="group w-full h-[580px] cursor-pointer"
+      className="group w-full h-[400px] cursor-pointer"
       onClick={() => setIsFlipped(!isFlipped)}
       onMouseMove={(e) => {
         const rect = e.currentTarget.getBoundingClientRect();
@@ -135,22 +135,27 @@ const Stack = () => {
   return (
     <section
       id="stack"
-      className="relative min-h-screen w-full bg-white flex flex-col items-center overflow-hidden"
-      style={{ paddingTop: "180px", paddingBottom: "96px" }}
+      // 2. REMOVE min-h-screen (keep it as relative w-full)
+      className="relative w-full bg-white flex flex-col items-center overflow-hidden"
+      style={{ paddingTop: "40px", paddingBottom: "40px" }}
     >
-      <div className="relative z-10 text-center mb-16">
-        <h2 className="text-[90px] font-black text-gray-900 tracking-tighter">
+      <div className="relative z-10 text-center mb-6">
+        <h2 className="text-[70px] md:text-[90px] font-black text-gray-900 tracking-tighter">
           My Stack
         </h2>
       </div>
 
-<div className="relative z-10 w-full max-w-[1100px] px-4 grid grid-cols-3 gap-x-[96px] gap-y-[58px]">
-        {tools.map((tool, index) => (
-          <div key={index} className="p-4">
-            <StackCard tool={tool} index={index} />
-          </div>
-        ))}
-      </div>
+      <div className="relative z-10 w-full max-w-[1100px] px-4 grid grid-cols-3 gap-x-[60px] gap-y-[58px] max-[760px]:grid-cols-1">
+  {tools.map((tool, index) => (
+    <div
+      key={index}
+      className="px-0 py-0"
+    >
+      <StackCard tool={tool} index={index} />
+    </div>
+  ))}
+</div>
+
     </section>
   );
 };

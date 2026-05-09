@@ -7,14 +7,14 @@ const About = () => {
 return (
     <section
       id="about"
-      className="relative min-h-screen w-full bg-[#f5f5f7] font-satoshi flex"
+      className="relative min-h-screen w-full bg-[#f5f5f7] font-satoshi flex flex-col min-[768px]:flex-row"
       style={{ paddingBottom: "80px" }}
     >
       {/* BACKGROUND */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,115,0,0.08),transparent_25%),radial-gradient(circle_at_bottom_right,rgba(99,102,241,0.08),transparent_25%)]" />
 
 {/* LEFT SIDE - VERTICAL IMAGE (42% width) - HALF CAPSULE SHAPE */}
-      <div className="relative w-[42%] h-full flex items-start justify-center px-6 z-10 pt-20">
+      <div className="relative hidden min-[768px]:flex min-[768px]:w-[42%] h-full items-start justify-center px-6 z-10 pt-20">
         <Motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -57,7 +57,7 @@ return (
       </div>
 
 {/* RIGHT SIDE - CONTENT (58% width) */}
-      <div className="relative w-[58%] h-full  overflow-y-auto z-20 pl-4 pr-12 lg:pl-12 lg:pr-24">
+      <div className="relative w-full min-[768px]:w-[58%] h-full overflow-y-auto z-20 px-6 pt-20 min-[768px]:pl-4 min-[768px]:pr-12 min-[768px]:pt-0 lg:pl-12 lg:pr-24">
         <Motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -70,15 +70,15 @@ return (
           className="max-w-3xl"
         >
           {/* SMALL LABEL */}
-          <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-black/10 bg-white px-5 py-3 shadow-sm">
+          <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-black/10 bg-white px-5 py-3 shadow-sm max-[767px]:gap-2 max-[767px]:px-4 max-[767px]:py-2.5">
             <div className="h-2.5 w-2.5 rounded-full bg-orange-500" />
-            <span className="text-sm font-semibold tracking-wide text-gray-700">
+            <span className="text-sm font-semibold tracking-wide text-gray-700 max-[767px]:text-xs">
               ABOUT ME
             </span>
           </div>
 
           {/* BIG HEADING */}
-          <h1 className="text-[clamp(4rem,7vw,7rem)] font-black leading-[0.9] tracking-[-0.08em] text-[#0f172a]">
+          <h1 className="text-[clamp(4rem,7vw,7rem)] font-black leading-[0.9] tracking-[-0.08em] text-[#0f172a] max-[767px]:text-[2.2rem] max-[767px]:leading-[1] max-[767px]:tracking-[-0.04em]">
             Creative
             <br />
             Software Developer
@@ -86,12 +86,12 @@ return (
 
 {/* DESCRIPTION */}
           <div className="mt-12 space-y-8">
-            <p className="text-[30px] leading-[2] text-gray-600 lg:text-[22px]">
+            <p className="text-[30px] leading-[2] text-gray-600 lg:text-[22px] max-[767px]:text-[16px] max-[767px]:leading-[1.8]">
               Greetings! I'm Aarti, a passionate frontend developer and UI/UX
               designer dedicated to building elegant and immersive digital
               experiences that feel smooth, modern, and visually refined.
             </p>
-            <p className="text-[30px] leading-[2] text-gray-600 lg:text-[22px]">
+            <p className="text-[30px] leading-[2] text-gray-600 lg:text-[22px] max-[767px]:text-[16px] max-[767px]:leading-[1.8]">
               I specialize in creating responsive interfaces using React,
               Tailwind CSS, Framer Motion, and modern design systems —
               transforming creative ideas into polished experiences.
@@ -105,14 +105,11 @@ return (
               href="/AARTI_KUMARI_SOFTWARE_DEVELOPER_RESUME.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="group gap-4 rounded-full bg-orange-500 px-14 py-6 text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-orange-600 no-underline"
+              className="group gap-4 rounded-full bg-orange-500 px-14 py-6 text-[23px] text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-orange-600 no-underline min-w-[200px] min-h-[40px] max-[767px]:px-8 max-[767px]:py-4 max-[767px]:text-[18px] max-[767px]:min-w-[160px] max-[767px]:min-h-[36px]"
 style={{ 
                 backgroundColor: "#ff6600",
                 color: "#ffffff",
-                fontSize: "23px",
-                fontWeight: "700",
-                minWidth: "200px",
-                minHeight: "40px"
+                fontWeight: "700"
                 
               }}
             >
@@ -125,14 +122,11 @@ style={{
               />
             </a>
             <button 
-              className="rounded-full border-4 border-orange-500 px-14 py-6 text-orange-500 transition-all duration-300 hover:bg-orange-500 hover:text-white"
+              className="rounded-full border-4 border-orange-500 px-14 py-6 text-[24px] text-orange-500 transition-all duration-300 hover:bg-orange-500 hover:text-white min-w-[200px] min-h-[40px] max-[767px]:px-8 max-[767px]:py-4 max-[767px]:text-[18px] max-[767px]:min-w-[160px] max-[767px]:min-h-[36px]"
               style={{
                 borderColor: "#ff6600", 
                 color: "#ff6600",
-                fontSize: "24px",
-                fontWeight: "700",
-                minWidth: "200px",
-                minHeight: "40px"
+                fontWeight: "700"
               }}
               onClick={() => {
                 const contactSection = document.getElementById('contact');
