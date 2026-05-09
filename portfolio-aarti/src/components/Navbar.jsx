@@ -106,7 +106,7 @@ function Navbar() {
         </div>
       </nav>
 
-     {/* MOBILE HAMBURGER BUTTON - Positions the toggle top-right when menu is open */}
+     {/* MOBILE HAMBURGER BUTTON */}
       <nav className={`fixed top-6 right-6 z-[70] block min-[768px]:hidden transition-colors duration-300`}>
         <button
           type="button"
@@ -118,7 +118,7 @@ function Navbar() {
         </button>
       </nav>
 
-      {/* MOBILE OVERLAY - Centered items with the "Pill" highlight */}
+     
       <div
         className={`fixed inset-0 z-[60] min-[768px]:hidden bg-white transition-all duration-500 ease-in-out ${
           isMobileMenuOpen
