@@ -9,8 +9,7 @@ A complete journey of learning Node.js step by step with daily progress and core
 ## V8 Engine
 <!-- Insert V8 Engine Image Here -->
 
-![V8 Engine](./images/node.webp)
-
+<img src="./images/node.webp" alt="V8 Engine" width="500"/>
 ---
 
 ## Libuv
