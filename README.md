@@ -6,16 +6,10 @@ A complete journey of learning Node.js step by step with daily progress and core
 
 # 🖼️ Node.js Architecture
 
-## V8 Engine
-<!-- Insert V8 Engine Image Here -->
 
-<img src="./images/node.webp" alt="V8 Engine" width="500"/>
----
 
-## Libuv
-<!-- Insert Libuv Image Here -->
 
-![Libuv](./images/libuv.png)
+![Libuv]([./images/libuv.png](https://raw.githubusercontent.com/Artikumari005/Portfolio/dd3cc1eb9de08e2375bf2646226e43a2a8398181/portfolio-aarti/node.webp))
 
 ---
 
