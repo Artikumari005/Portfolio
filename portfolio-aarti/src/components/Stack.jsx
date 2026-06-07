@@ -27,6 +27,21 @@ const tools = [
     name: "Tailwind",
     icon: "https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg",
     desc: "I design fast and consistent interfaces using utility-first styling, enabling rapid development without compromising design quality."
+  },
+  {
+    name: "Node.js",
+    icon: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg",
+    desc: "I build fast, scalable backend services using Node.js with asynchronous programming patterns and efficient server-side logic."
+  },
+  {
+    name: "Express",
+    icon: "https://cdn.worldvectorlogo.com/logos/express-109.svg",
+    desc: "I create robust REST APIs and web applications using Express.js, handling routing, middleware, and server architecture effectively."
+  },
+  {
+    name: "MongoDB",
+    icon: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg",
+    desc: "I design flexible database schemas using MongoDB, leveraging NoSQL principles for scalable data storage and retrieval."
   }
 ];
 
