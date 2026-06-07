@@ -1,6 +1,6 @@
-import FF1 from "../images/ff1.png";
-import FF2 from "../images/ff2.png";
-import FF3 from "../images/ff3.png";
+import FF1 from "../images/devTinder1.png";
+import FF2 from "../images/devTinder2.png";
+import FF3 from "../images/devTinder3.png";
 import Flip from "../images/flip.png";
 import College from "../images/college.png";
 import Chafexa from "../images/port1.png";
@@ -11,15 +11,13 @@ import Tenzien3 from "../images/tenzien3.png";
 export const projects = [
   {
     id: "food-forever",
-    title: "FOOD FOREVER",
-    category: "Food Delivery Website",
+    title: "devTinder",
+    category: "Friends with similar interests",
     image: FF1,
     gallery: [FF1, FF2, FF3],
-    liveUrl: "https://food-website-bpv8n8o1v-aartis-projects-5f30b00f.vercel.app",
+    liveUrl: "https://dev-tinder-frontend-cykq71iux-aartis-projects-5f30b00f.vercel.app",
     approach: [
-      "With FOOD FOREVER, my goal was to create a food delivery website template that does not just list menu items; it ignites cravings.",
-      "Bold visuals, seamless navigation, and conversion-focused design come together for chicken restaurants, non-veg specialists, and delivery businesses.",
-      "The experience balances fiery branding, tabbed menu discovery, partner trust signals, and fast order CTAs across every screen size."
+      "DevTinder is a full-stack developer networking platform inspired by Tinder, designed to help developers discover, connect, and communicate with like-minded professionals. The platform combines profile-based matching, connection requests, and real-time messaging to create a seamless networking experience for developers seeking collaboration, mentorship, or career opportunities."
     ]
   },
 {

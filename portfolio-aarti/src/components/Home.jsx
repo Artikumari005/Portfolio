@@ -4,8 +4,8 @@ import image from "../images/profile2.png";
 import Scene from "./Scene";
 
 const roles = [
-  "Software Developer",
-  "Logo Designer",
+  "MERN Stack Developer",
+  "UI/UX Designer"
   
 ];
 

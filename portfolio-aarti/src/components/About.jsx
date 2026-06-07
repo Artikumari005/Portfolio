@@ -85,13 +85,12 @@ return (
 {/* DESCRIPTION */}
           <div className="mt-12 space-y-8">
             <p className="text-[30px] leading-[2] text-gray-600 lg:text-[22px] max-[767px]:text-[16px] max-[767px]:leading-[1.8]">
-              Greetings! I'm Aarti, a passionate frontend developer and UI/UX
+              Greetings! I'm Aarti, a passionate full-stack developer and UI/UX
               designer dedicated to building elegant and immersive digital
               experiences that feel smooth, modern, and visually refined.
             </p>
             <p className="text-[30px] leading-[2] text-gray-600 lg:text-[22px] max-[767px]:text-[16px] max-[767px]:leading-[1.8]">
-              I specialize in creating responsive interfaces using React,
-              Tailwind CSS, Framer Motion, and modern design systems —
+              I specialize in creating responsive interfaces using MERN stack  and modern design systems —
               transforming creative ideas into polished experiences.
             </p>
             
@@ -99,7 +98,7 @@ return (
 
           <div className="mt-16 flex flex-wrap items-center gap-8">
             <a
-              href="/AARTI_KUMARI_SOFTWARE_DEVELOPER_RESUME.pdf"
+              href="/SOFTWARE-DEVELOPER.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="group gap-4 rounded-full bg-orange-500 px-14 py-6 text-[23px] text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-orange-600 no-underline min-w-[200px] min-h-[40px] max-[767px]:px-8 max-[767px]:py-4 max-[767px]:text-[18px] max-[767px]:min-w-[160px] max-[767px]:min-h-[36px]"
